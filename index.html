@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🪐 Space Image Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🪐 Space Image Analyzer</h1>
+    <p>อัปโหลดภาพอวกาศ แล้วให้ AI วิเคราะห์!</p>
+
+    <input type="file" id="imageUpload" accept="image/*">
+    <img id="preview" src="" alt="Preview">
+
+    <button id="predictBtn">🔍 วิเคราะห์รูปภาพ</button>
+
+    <div id="result">⏳ กำลังโหลดโมเดล...</div>
+  </div>
+
+  <footer>🚀 Powered by TensorFlow.js | Dark Galaxy Theme</footer>
+  <script src="script.js"></script>
+</body>
+</html>
